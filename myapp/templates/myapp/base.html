@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<head>
+	<style type="text/css">
+	
+		nav a {
+		  transition: 0.3s ease;
+		  color: white;
+		  font-size: 20px;
+		  text-decoration: none;
+		  border-top: 4px solid transparent;
+		  border-bottom: 4px solid transparent;
+		  padding: 20px 0;
+		  margin-left: 50px;
+		  font-size: 17px;
+		}
+		nav a:hover {
+		  border-top: 4px solid white;
+		  border-bottom: 4px solid white;
+		  padding: 6px 0; 
+		}
+		.main{
+			margin-left: 200px;
+			padding: 0px 10px;
+		}
+	</style>
+	<title>{% block title %}Hema's site{% endblock %}</title>
+</head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="/">Home</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="/create">Create</a>
+	      </li>
+	      <li class="nav-item">
+	      	<a class ="nav-link" href="/view">View</a>
+	      </li>	  
+	  </div>
+	</nav>
+	<div id="content", name="content", class="main">
+		<div class="row justify-content-center">
+			<div class="col-8">
+				<h2 class="mt-2">My site</h2>
+				<hr class="mt-0 mb-4">
+					{% block content %}
+					{% endblock %}				
+			</div>
+		</div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</html>
